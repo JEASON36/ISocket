@@ -1,0 +1,39 @@
+<!--pages/home/home.wxml-->
+<view class="item">
+     <view class="item">
+        <view><image src="../../image/socket.png" style="width:93px;height:73px;"></image></view>
+        <view class="des">
+           <view >
+               ISocket智能插座一
+           </view>
+           <view class="hr"></view>
+           <view class="body-view">
+    <switch checked bindchange="switch1Change"/>
+</view> 
+        </view>
+     </view>
+     <view class="line"></view>
+     <view class="hr"></view>
+</view>
+
+<view class="line"></view>
+
+
+<view class="item">
+     <view class="item">
+        <view><image src="../../image/socket.png" style="width:93px;height:73px;"></image></view>
+        <view class="des">
+           <view >
+               ISocket智能插座二
+           </view>
+           <view class="hr"></view>
+           <view class="body-view">
+    <switch checked bindchange="switch1Change"/>
+</view> 
+        </view>
+     </view>
+     <view class="line"></view>
+     <view class="hr"></view>
+</view>
+
+<view class="line"></view>
