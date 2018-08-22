@@ -10,6 +10,26 @@ Page({
 // 添加一个插座开关功能
   switch1Change: function (e) {
     console.log('switch1 发生 change 事件，携带值为', e.detail.value)
+    if (e.detail.value) {
+      var enable = 1;
+    }else {
+      enable = 0;
+    }
+    wx.request({
+      url: 'https://www.qyizhong.cn/isocket/index.php',
+      method: 'GET',
+      dataType: 'json',
+      data: {
+        action: 'Socket/open',
+        enable: enable
+      },
+      success: function(data) {
+        
+      },
+      fail: function(error) {
+
+      }
+    })
   },
   switch2Change: function (e) {
     console.log('switch2 发生 change 事件，携带值为', e.detail.value)
